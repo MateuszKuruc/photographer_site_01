@@ -6,7 +6,7 @@
     <div class="cs-top-bar">
         <div class="cs-top-container">
             <!--We have 2 cs-logo links, this is because on mobile it needs to be in the same container as the nav toggle, and on desktop it needs to be in the top container. This is the simplest solution to do this-->
-            <a href="" class="cs-logo cs-top-logo" aria-label="back to home">
+            <a href="/" class="cs-logo cs-top-logo" aria-label="back to home">
                 <!--White Logo-->
                 <!--This nav has an on scroll effect to rotate the images to swap the light version with the dark version so it shows up on the white background that animates behind the nav-->
                 <img class="cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/agency-logo.svg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
@@ -45,7 +45,12 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="" class="cs-li-link cs-active">
+                        <a href="/" 
+                        class:list={[
+                            "cs-li-link",
+                            { "cs-active": Astro.url.pathname === "/"}
+                            ]}
+                        >
                             O mnie
                         </a>
                     </li>
@@ -57,27 +62,32 @@
                         </span>
                         <ul class="cs-drop-ul">
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Fotografia ślubna</a>
+                                <a href="/fotografia-slubna/" class="cs-li-link cs-drop-link">Fotografia ślubna</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Sesja biznesowa</a>
+                                <a href="/fotografia-biznesowa/" class="cs-li-link cs-drop-link">Fotografia biznesowa</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Fotografia artystyczna</a>
+                                <a href="/fotografia-artystyczna/" class="cs-li-link cs-drop-link">Fotografia artystyczna</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Fotografia reklamowa</a>
+                                <a href="/fotografia-reklamowa/" class="cs-li-link cs-drop-link">Fotografia reklamowa</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Fotografia sportowa</a>
+                                <a href="/fotografia-sportowa/" class="cs-li-link cs-drop-link">Fotografia sportowa</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Fotografia zwierząt</a>
+                                <a href="/fotografia-zwierzat/" class="cs-li-link cs-drop-link">Fotografia zwierząt</a>
                             </li>
                         </ul>
                     </li>
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/kontakt/" 
+                        class:list={[
+                            "cs-li-link",
+                            { "cs-active": Astro.url.pathname === "/kontakt/"}
+                            ]}
+                        >
                             Kontakt
                         </a>
                     </li>
@@ -849,7 +859,7 @@ box-shadow: 0px 6px 19px 3px rgba(0, 0, 0, 1);
   }
   #cs-navigation .cs-li-link {
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.2vw, 2rem);
+    font-size: clamp(0.875rem, 1vw, 2rem);
     line-height: 1.5rem;
     text-decoration: none;
     margin: 0;
@@ -866,7 +876,7 @@ box-shadow: 0px 6px 19px 3px rgba(0, 0, 0, 1);
     color: var(--primary);
   }
   #cs-navigation .cs-nav-button {
-    line-height: 2.875rem;
+    /* line-height: 2.875rem; */
   }
 }
                                 

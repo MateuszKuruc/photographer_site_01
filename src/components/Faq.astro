@@ -6,84 +6,54 @@
     <div class="cs-container">
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png">
+            <source media="(max-width: 600px)" srcset="/assets/gallery/faq.jpg">
             <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/environment-slogan.png" alt="body shop" width="522" height="609" aria-hidden="true">
+            <source media="(min-width: 601px)" srcset="/assets/gallery/faq.jpg">
+            <img loading="lazy" decoding="async" src="/assets/gallery/faq.jpg" alt="body shop" width="522" height="609" aria-hidden="true">
         </picture>
         <div class="cs-content">
-            <span class="cs-topper">Asked Questions</span>
-            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <span class="cs-topper">Dowiedz się więcej</span>
+            <h2 class="cs-title">Najczęściej zadawane pytania</h2>
             <ul class="cs-faq-group">
                 <!-- Active class added as default -->
                 <li class="cs-faq-item active">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How does climate change affect people?
+                            Gdzie wykonujesz zlecenia?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        Mieszkam w Rzeszowie, ale chętnie i często podróżuję, więc przyjmuję zlecenia wyjazdowe. Stworzę odpowiednie warunki do fotografii w dowolonym miejscu gdzie mnie potrzebujesz.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            What is being done about climate change?
+                            Jakie masz doświadczenie?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        Zawodowo zajmuję się fotografią już od ponad 10 lat. Jednak z branżą mam do czynienia znacznie dłużej - zaczynałem jeszcze kilka lat wcześniej jako pasjonat amator.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            What is being done about climate change?
+                            Czy poddajesz wykonane zdjęcia obróbce?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      Tak, wszystkie wykonane przeze mnie zdjęcia przechodzą profesjonalną obróbkę cyfrową, aby zapewnić najwyższą jakość i zgodność z oczekiwaniami klienta.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            What is being done about climate change?
+                            Jakiego sprzętu używasz?
                         </span>
                     </button>
                     <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Is it hopeless to stop climate change?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How is climate change affecting wildlife?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How do I join the volunteer team?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                      Używam profesjonalnego sprzętu fotograficznego marki Sony, w tym najnowszych modeli lustrzanek cyfrowych i obiektywów, które pozwalają mi na uzyskanie najwyższej jakości zdjęć w różnych warunkach oświetleniowych.
                     </p>
                 </li>
             </ul>
@@ -247,7 +217,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
   }
 }
 /* Desktop - 1024px */
@@ -274,12 +244,20 @@
 </style>
 
 <script>
-    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-        for (const item of faqItems) {
-            const onClick = () => {
-            item.classList.toggle('active')
-        }
-        item.addEventListener('click', onClick)
-        }
+     const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+
+for (const item of faqItems) {
+    item.addEventListener('click', () => {
+        // First, remove the 'active' class from all FAQ items.
+        faqItems.forEach(faqItem => {
+            if (faqItem !== item) { // Avoid closing the item that was just clicked.
+                faqItem.classList.remove('active');
+            }
+        });
+
+        // Then, toggle the 'active' class on the clicked item.
+        item.classList.toggle('active');
+    });
+}
                                 
 </script>

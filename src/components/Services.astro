@@ -2,11 +2,11 @@
 <!--                    Services                  -->
 <!-- ============================================ -->
 
-<section id="services-1356">
+<section id="services">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Our Services</span>
-            <h2 class="cs-title">We’re Committed to Deliver Top High Quality Services</h2>
+            <span class="cs-topper">Szeroka oferta</span>
+            <h2 class="cs-title">Poznaj zakres usług</h2>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
@@ -20,8 +20,8 @@
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="/sesja-biznesowa" class="cs-link">
-                    <h3 class="cs-h3"><span class="cs-span">Sesja</span> biznesowa</h3>
+                <a href="/fotografia-biznesowa" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Fotografia</span> biznesowa</h3>
                 </a>
                 <picture class="cs-background">
                     <source media="(max-width: 600px)" srcset="/assets/gallery/business.webp">
@@ -80,12 +80,12 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-1356 {
+    #services {
         padding: var(--sectionPadding);
         position: relative;
         z-index: 10;
     }
-    #services-1356 .cs-container {
+    #services .cs-container {
         width: 100%;
         max-width: 80rem;
         margin: auto;
@@ -95,7 +95,7 @@
         flex-direction: column;
         gap: clamp(3rem, 6vw, 4rem);
     }
-    #services-1356 .cs-content {
+    #services .cs-content {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
@@ -105,14 +105,11 @@
         align-items: center;
     }
 
-    #services-1356 .cs-topper {
-        color: #767676;
-    }
-    #services-1356 .cs-title {
+    #services .cs-title {
         max-width: 25ch;
         margin: 0;
     }
-    #services-1356 .cs-card-group {
+    #services .cs-card-group {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -121,7 +118,7 @@
         /* 16px - 20px */
         gap: clamp(1rem, 2vw, 1.25rem);
     }
-    #services-1356 .cs-item {
+    #services .cs-item {
         text-align: center;
         list-style: none;
         width: 100%;
@@ -144,14 +141,14 @@
         position: relative;
         z-index: 1;
     }
-    #services-1356 .cs-item:hover .cs-background:before {
+    #services .cs-item:hover .cs-background:before {
         background-color: var(--primary);
         opacity: 0.84;
     }
-    #services-1356 .cs-item:hover .cs-background img {
+    #services .cs-item:hover .cs-background img {
         transform: scale(1.2);
     }
-    #services-1356 .cs-link {
+    #services .cs-link {
         text-decoration: none;
         width: 100%;
         height: 100%;
@@ -163,7 +160,7 @@
         justify-content: center;
         align-items: center;
     }
-    #services-1356 .cs-h3 {
+    #services .cs-h3 {
         /* 20px - 25px */
         font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
         line-height: 1.2em;
@@ -173,11 +170,11 @@
         color: var(--bodyTextColorWhite);
         transition: color 0.3s;
     }
-    #services-1356 .cs-span {
+    #services .cs-span {
         /* forces the h3 to alwasy be two lines */
         display: block;
     }
-    #services-1356 .cs-background {
+    #services .cs-background {
         width: 100%;
         height: 100%;
         display: block;
@@ -186,7 +183,7 @@
         left: 0;
         z-index: -1;
     }
-    #services-1356 .cs-background:before {
+    #services .cs-background:before {
         /* background color overlay */
         content: "";
         position: absolute;
@@ -202,7 +199,7 @@
             background-color 0.3s,
             opacity 0.3s;
     }
-    #services-1356 .cs-background img {
+    #services .cs-background img {
         position: absolute;
         top: 0;
         left: 0;
@@ -215,17 +212,17 @@
 }
 /* Tablet - 600px */
 @media only screen and (min-width: 37.5rem) {
-    #services-1356 .cs-content {
+    #services .cs-content {
         text-align: left;
         align-items: flex-start;
     }
-    #services-1356 .cs-item {
+    #services .cs-item {
         grid-column: span 6;
     }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #services-1356 .cs-item {
+    #services .cs-item {
         grid-column: span 4;
     }
 }

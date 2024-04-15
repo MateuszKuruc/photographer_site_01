@@ -2,7 +2,7 @@
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
-<section id="contact-1600">
+<section id="contact">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Contact Us</span>
@@ -31,36 +31,36 @@
         <div class="cs-wrapper">
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <span class="cs-header">Our Support</span>
+                    <span class="cs-header">Zadzwoń</span>
                     <p class="cs-item-text">
-                        We are available for your 24/7 support.<br>
-                        <a class="cs-link" href="tell:555-555-5555">(555) 555-5555</a>                    
+                        Jestem dostępny pod numerem<br>
+                        <a class="cs-link" href="tell:555-555-5555">+48 868 547 342</a>                    
                     </p>
                 </li>
                 <li class="cs-item">
-                    <span class="cs-header">Email Us</span>
+                    <span class="cs-header">Napisz</span>
                     <p class="cs-item-text">
-                        Email your questions at
-                        <a class="cs-link" href="mailto:info@invetexfinance.com">info@invetexfinance.com</a>     
+                        Wyślij email na adres
+                        <a class="cs-link" href="mailto:info@piotrmaslak.pl.com">info@piotrmaslak.pl</a>     
                     </p>
                 </li>
                 <li class="cs-item">
-                    <span class="cs-header">Reviews</span>
+                    <span class="cs-header">Instagram</span>
                     <p class="cs-item-text">
-                        See Our reviews on Google or leave a review
+                        Zachęcam do śledzenia mojego profilu
                         <a href="" class="cs-link">
                             <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/google-1a.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">
-                            Google Reviews
+                            Instagram
                         </a>                   
                     </p>
                 </li>
             </ul>
             <picture class="cs-background">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/gallery/contact.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg" alt="people" width="522" height="771">
+                <source media="(min-width: 601px)" srcset="/assets/gallery/contact.jpg">
+                <img loading="lazy" decoding="async" src="/assets/gallery/contact.jpg" alt="people" width="522" height="771">
             </picture>
         </div>
     </div>
@@ -73,13 +73,13 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #contact-1600 {
+  #contact {
     padding: var(--sectionPadding);
     overflow: hidden;
     position: relative;
     z-index: 1;
   }
-  #contact-1600 .cs-container {
+  #contact .cs-container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 34.375rem;
@@ -91,7 +91,7 @@
     /* 48px - 80px */
     gap: clamp(3rem, 6vw, 5rem);
   }
-  #contact-1600 .cs-content {
+  #contact .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -103,10 +103,10 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #contact-1600 .cs-title {
+  #contact .cs-title {
     margin: 0 0 2rem 0;
   }
-  #contact-1600 .cs-form {
+  #contact .cs-form {
     width: 100%;
     padding: 0;
     /* prevents flexbox from affecting height and width */
@@ -117,7 +117,7 @@
     align-items: center;
     gap: 0.75rem;
   }
-  #contact-1600 .cs-label {
+  #contact .cs-label {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     width: 100%;
@@ -128,10 +128,10 @@
     align-items: flex-start;
     gap: 0.25rem;
   }
-  #contact-1600 .cs-label:last-of-type {
+  #contact .cs-label:last-of-type {
     margin-bottom: 2rem;
   }
-  #contact-1600 .cs-input {
+  #contact .cs-input {
     font-size: 1rem;
     width: 100%;
     /* 46px - 56px */
@@ -143,21 +143,22 @@
     border: none;
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
+    border-radius: 2rem;
   }
-  #contact-1600 .cs-input::placeholder {
+  #contact .cs-input::placeholder {
     color: #7D799C;
     opacity: .6;
   }
-  #contact-1600 .cs-textarea {
+  #contact .cs-textarea {
     min-height: 7.5rem;
     padding-top: 1.5rem;
     font-family: inherit;
   }
  
-  #contact-1600 .cs-submit:hover {
+  #contact .cs-submit:hover {
     cursor: pointer;
   }
-  #contact-1600 .cs-wrapper {
+  #contact .cs-wrapper {
     /* 32px - 108px */
     padding: clamp(2rem, 8vw, 6.75rem) 0;
     display: flex;
@@ -166,7 +167,7 @@
     position: relative;
     z-index: 1;
   }
-  #contact-1600 .cs-card-group {
+  #contact .cs-card-group {
     width: 75%;
     max-width: 25.8125rem;
     margin: 0;
@@ -179,7 +180,7 @@
     position: relative;
     z-index: 1;
   }
-  #contact-1600 .cs-item {
+  #contact .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -193,28 +194,30 @@
     background-color: #fff;
     position: relative;
     z-index: 1;
+    border-radius: 2rem;
   }
-  #contact-1600 .cs-item:hover:before {
+  #contact .cs-item:hover:before {
     opacity: 1;
+    border-radius: 2rem;
   }
-  #contact-1600 .cs-item:hover .cs-header {
+  #contact .cs-item:hover .cs-header {
     color: var(--primary);
   }
-  #contact-1600 .cs-item:hover .cs-item-text,
-  #contact-1600 .cs-item:hover .cs-link {
+  #contact .cs-item:hover .cs-item-text,
+  #contact .cs-item:hover .cs-link {
     color: var(--bodyTextColorWhite);
   }
-  #contact-1600 .cs-item:hover .cs-text,
-  #contact-1600 .cs-item:hover .cs-link {
+  #contact .cs-item:hover .cs-text,
+  #contact .cs-item:hover .cs-link {
     opacity: .8;
   }
-  #contact-1600 .cs-item:hover .cs-link:hover {
+  #contact .cs-item:hover .cs-link:hover {
     color: var(--primary);
   }
-  #contact-1600 .cs-item:hover .cs-icon {
+  #contact .cs-item:hover .cs-icon {
     filter: grayscale(1) brightness(1000%);
   }
-  #contact-1600 .cs-item:before {
+  #contact .cs-item:before {
     /* hover border and background */
     content: '';
     width: 100%;
@@ -227,8 +230,9 @@
     left: 0;
     z-index: -1;
     transition: opacity .3s;
+    border-radius: 2rem;
   }
-  #contact-1600 .cs-header {
+  #contact .cs-header {
     font-size: 1.25rem;
     line-height: 1.2em;
     text-align: inherit;
@@ -238,7 +242,7 @@
     display: block;
     transition: color .3s;
   }
-  #contact-1600 .cs-item-text {
+  #contact .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -248,7 +252,7 @@
     display: block;
     transition: color .3s;
   }
-  #contact-1600 .cs-link {
+  #contact .cs-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -261,11 +265,11 @@
     gap: 0.25rem;
     transition: color .3s;
   }
-  #contact-1600 .cs-icon {
+  #contact .cs-icon {
     width: 1rem;
     height: auto;
   }
-  #contact-1600 .cs-background {
+  #contact .cs-background {
     height: 100%;
     width: 100%;
     max-width: 32.625rem;
@@ -275,18 +279,19 @@
     top: 0;
     z-index: -1;
   }
-  #contact-1600 .cs-background img {
+  #contact .cs-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 2rem;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #contact-1600 .cs-container {
+  #contact .cs-container {
     max-width: 80rem;
     /* removed at large desktop. This is to clip the cs-background */
     overflow: hidden;
@@ -294,7 +299,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  #contact-1600 .cs-content {
+  #contact .cs-content {
     text-align: left;
     width: 42%;
     margin: 0;
@@ -302,33 +307,33 @@
     align-items: flex-start;
     order: 1;
   }
-  #contact-1600 .cs-form {
+  #contact .cs-form {
     padding: 0;
   }
-  #contact-1600 .cs-submit {
+  #contact .cs-submit {
     margin-left: 0;
   }
-  #contact-1600 .cs-wrapper {
+  #contact .cs-wrapper {
     width: 50%;
     max-width: 39.375rem;
     order: 2;
   }
-  #contact-1600 .cs-card-group {
+  #contact .cs-card-group {
     padding: 0;
   }
-  #contact-1600 .cs-card-background {
+  #contact .cs-card-background {
     display: none;
   }
-  #contact-1600 .cs-background {
+  #contact .cs-background {
     display: block;
   }
 }
 /* Large Desktop - 1500px */
 @media only screen and (min-width: 93.75rem) {
-  #contact-1600 .cs-container {
+  #contact .cs-container {
     overflow: visible;
   }
-  #contact-1600 .cs-background {
+  #contact .cs-background {
     left: 11.75rem;
   }
 }
