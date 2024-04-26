@@ -1,0 +1,188 @@
+---
+import NavBar from '../components/NavBar.astro';
+import Footer from "../components/Footer.astro"
+import ContactForm from "../components/ContactForm.astro"
+import Reviews from "../components/Reviews.astro"
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Dynamic Web Agency" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+         <!--Favicons-->
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/logo.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/assets/logo.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/assets/logo.png"
+  />
+	</head>
+	<body>
+        <NavBar />
+	    <slot />
+        <Reviews />
+        <ContactForm />
+        <Footer />
+	</body>
+</html>
+<style is:global>
+:root {
+    --primary: #E9C18D;
+    --primaryLight: #f8f0d8;
+    --secondary: #1a1a1a;
+    --secondaryLight: #f7b801;
+    --backgroundColor: #FFFBF1;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+/* stint-ultra-expanded-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Stint Ultra Expanded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/stint-ultra-expanded-v22-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pontano-sans-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pontano-sans-v17-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pontano-sans-700 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pontano-sans-v17-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pontano Sans';
+    background-color: var(--backgroundColor);
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-button-solid {
+        font-size: 1rem;
+        line-height: 3.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        overflow: hidden;
+        margin: 0;
+        /* color: #fff; */
+        color: var(--headerColor);
+        padding: 0 3rem;
+        border-radius: 1.875rem;
+        background-color: var(--primary);
+        /* background-color: #1a1a1a; */
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: background-color 0.4s;
+        border: 0;
+    }
+.cs-button-solid:before {
+        /* content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 0%;
+        background: #fff;
+        background: var(--secondary);
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 0.3s; */
+    }
+.cs-button-solid:hover {
+        color: var(--primary);
+        background-color: var(--secondary);
+    }
+.cs-button-solid:hover:before {
+        width: 100%;
+    }
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+    font-family: 'Stint Ultra Expanded';
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+    font-family: 'Stint Ultra Expanded';
+}
+.cs-int-title {
+  font-family: 'Stint Ultra Expanded';
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Stint Ultra Expanded';
+}
+</style>

@@ -1,0 +1,184 @@
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-1730">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Dlaczego warto</span>
+          <h2 class="cs-title">Zalety współpracy</h2>
+          <a href="#contact">
+            <button class="cs-button-solid">Wyślij zapytanie</button>
+          </a>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <picture class="cs-picture">
+              <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-layer.svg" alt="icon" width="72" height="72">
+          </picture>
+          <div class="cs-flex">
+              <h3 class="cs-h3">Wysoka jakość</h3>
+              <p class="cs-item-text">
+                Używam profesjonalnego sprzętu fotograficznego, co pozwala na dostarczanie zdjęć o najwyższej jakości.
+              </p>
+          </div>
+      </li>
+          <li class="cs-item">
+              <picture class="cs-picture">
+                  <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-house.svg" alt="icon" width="32" height="32">
+              </picture>
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Elastyczność</h3>
+                  <p class="cs-item-text">
+                    Działam na terenie całego Podkarpacia, a często także wyjazdowo w całej Polsce.
+                  </p>
+              </div>
+          </li>
+          <li class="cs-item">
+              <picture class="cs-picture">
+                  <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-hour.svg" alt="icon" width="72" height="72">
+              </picture>
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Doświadczenie</h3>
+                  <p class="cs-item-text">
+                      Działam w branży nieprzerwanie od ponad 10 lat i mam za sobą setki zrealizowanych projektów.
+                  </p>
+              </div>
+          </li>
+          <li class="cs-item">
+              <picture class="cs-picture">
+                  <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-flower.svg" alt="icon" width="72" height="72">
+              </picture>
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Kreatywność</h3>
+                  <p class="cs-item-text">
+                      Robię wszystko by efekt końcowy sesji zadowolił zarówno klienta, jak i mnie jako profesjonalistę
+                  </p>
+              </div>
+          </li>
+      </ul>
+  </div>
+</section>
+                              
+<style>
+  /*-- -------------------------- -->
+<---        Why Choose          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  .cs-button-solid:hover {
+    cursor: pointer;
+  }
+  #why-choose-1730 {
+    padding: var(--sectionPadding);
+  }
+  #why-choose-1730 .cs-container {
+    width: 100%;
+    /* changes to 1280px on tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #why-choose-1730 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 39rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #why-choose-1730 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 24px - 40px */
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+  }
+  #why-choose-1730 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    grid-column: span 12;
+    /* 20px - 32px */
+    gap: clamp(1.25rem, 3vw, 2rem);
+    transition: background-color 0.3s;
+  }
+  #why-choose-1730 .cs-picture {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  #why-choose-1730 .cs-icon {
+    width: 2rem;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+  #why-choose-1730 .cs-flex {
+    flex: 1 1 0;
+  }
+  #why-choose-1730 .cs-h3 {
+    /* 20px - 31px */
+    font-size: clamp(1.25rem, 3vw, 1.9375rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    /* 12px - 16px */
+    margin: 0 0 clamp(0.75rem, 2vw, 1rem);
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #why-choose-1730 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: auto 0 0 0;
+    color: var(--bodyTextColor);
+    transition: color 0.3s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #why-choose-1730 .cs-container {
+    max-width: 80rem;
+  }
+  #why-choose-1730 .cs-item {
+    grid-column: span 6;
+  }
+}
+/* Large Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+  #why-choose-1730 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #why-choose-1730 .cs-content {
+    text-align: left;
+    align-items: flex-start;
+  }
+  #why-choose-1730 .cs-card-group {
+    max-width: 52.9375rem;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+}
+                                
+</style>
