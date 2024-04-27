@@ -1,0 +1,19 @@
+---
+import ServicesPage from "../components/Services/ServicesPage.astro";
+import MiniGallery from "../components/MiniGallery.astro";
+import ServicesGallery from "../components/Services/ServicesGallery.astro"
+import Whyus from "../components/Whyus.astro";
+import Pricing from "../components/Pricing.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+
+<MainLayout title="Fotografia biznesowa">
+
+    <ServicesPage title="biznesowy" image="/assets/gallery/business.webp" />
+    <MiniGallery />
+    <ServicesGallery />
+    <Whyus />
+    <Pricing />
+
+</MainLayout>
